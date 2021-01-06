@@ -8455,6 +8455,21 @@ img {
   box-shadow: 5px 5px 30px 10px mediumslateblue;
 }
 
+.panel-collapse .panel-body {
+  text-align: center;
+  font-weight: bold;
+}
+
+.panel-collapse .panel-body .fa-file-pdf-o {
+  margin-left: 30px;
+}
+
+.orange-link{
+  color: #ee802f;
+  font-weight: bold;
+}
+
+
 /*-------------------*/
 
 /*# sourceMappingURL=style.css.map */

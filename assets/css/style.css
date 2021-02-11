@@ -7820,13 +7820,13 @@ img {
 
 .shop-details-main-content .shop-single-slider-wrapper .slider-for img {
   display: inline-block;
+  margin-top: 30px;
 }
 
 .shop-details-main-content .shop-single-slider-wrapper .slider-nav {
   padding: 0 25px;
   margin-top: 35px;
 }
-
 .shop-details-main-content .shop-single-slider-wrapper .slider-nav>i {
   position: absolute;
   top: 50%;
@@ -7857,7 +7857,7 @@ img {
 }
 
 .shop-details-main-content .product-details {
-  padding: 30px 30px 93px;
+  padding: 30px 30px 0px;
   /*** product option ***/
 }
 
@@ -8458,10 +8458,268 @@ img {
   margin-left: 30px;
 }
 
-.orange-link{
+.orange-link {
   color: #ee802f;
   font-weight: bold;
 }
+
+.request-form {
+  width: 500px;
+  background: #ee802f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #0b3356;
+  margin-left: auto;
+}
+
+.request-form img {
+  margin-top: 10px;
+}
+
+.request-form:hover {
+  background: #0b3356;
+  color: #ee802f;
+  transition: 0.5s all;
+}
+
+.slidershow {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-left: auto;
+}
+
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 20%;
+  transition: 0.6s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked~.s1 {
+  margin-left: 0;
+}
+
+#r2:checked~.s1 {
+  margin-left: -20%;
+}
+
+#r3:checked~.s1 {
+  margin-left: -40%;
+}
+
+#r4:checked~.s1 {
+  margin-left: -60%;
+}
+
+#r5:checked~.s1 {
+  margin-left: -80%;
+}
+
+.slide-rr {
+  position: absolute;
+  bottom: 20px;
+  left: 68%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.bar {
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+
+.bar:hover {
+  background: #fd3e03;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.left-slide-paragraph p {
+  font-size: 18px;
+}
+
+.tekstil-header {
+  text-align: center;
+}
+
+.tekstil-par {
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+}
+
+.tekstil-par-2 {
+  font-size: 16px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-flex {
+  text-align: center;
+  width: 100px;
+  height: auto;
+  margin-top: 20px;
+
+}
+
+.card-container img {
+  border-radius: 10px;
+  border: 1px solid #9a9a9a;
+}
+
+.card-container img:hover {
+  box-shadow: 3px 3px 20px 1px #9a9a9a;
+  transition: 0.5s ease-in-out;
+  transform: translateY(-10%);
+}
+
+.card-container h5 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.technique-header h3 {
+  color: white;
+  font-weight: normal;
+  position: relative;
+  top: 100px;
+}
+
+.technique-paragraph p {
+  display: inline-block;
+  margin-top: 100px;
+}
+
+.technique-link a {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.technique-link a {
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.technique-link a:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 2px 2px 10px 10px white;
+  transition: 0.5s ease-in-out;
+  border: 1px solid #0b3356;
+}
+
+
+.formContact {
+  border-radius: 20px;
+  border: 1px solid #333;
+  width: 500px;
+  height: 100%;
+}
+
+.form-group {
+  border-bottom: 1px solid #344E75;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: white;
+}
+
+.form-group:last-child {
+  border-bottom: none;
+}
+
+.form-group h3 {
+  color: darkgray;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+  border: 1px solid #344E75;
+  background-color: #91b3cd;
+  border-radius: 10px;
+  width: 75%;
+  text-align: center;
+  display: block;
+  font-size: 25px;
+}
+
+.form-group textarea {
+  margin-left: 60px;
+}
+
+.form-group input:focus {
+  outline: 0;
+  /* Focus olduğumuzda çıkan border'ı kaldırır. */
+}
+
+.form-group textarea:focus {
+  outline: 0;
+}
+
+.form-group a {
+  border: 1px solid #344E75;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.form-group a:hover {
+  background: #344E75;
+  transition: 0.5s all;
+  border: 1px solid;
+}
+
+.su-teknik {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+}
+
+
 
 
 /*-------------------*/
